@@ -17,3 +17,16 @@
 .text-poppins {
   font-family: 'Poppins', sans-serif;
 }
+
+.bg-dark {
+  background-color: #010313;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    180deg,
+    #e855de 0%,
+    #6c0eeb 41%,
+    rgba(84, 0, 238, 0.34) 71%
+  );
+}

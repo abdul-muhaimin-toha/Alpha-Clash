@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alpha Clash Pro</title>
+    <title>Alpha Clash</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
       rel="stylesheet"
@@ -13,6 +13,121 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Container Div -->
+    <div class="min-h-screen bg-dark relative flex justify-center">
+      <!-- Center Gradient Div -->
+      <div class="bg-gradient w-3/5 min-h-screen absolute"></div>
+      <!-- Content Container -->
+      <div
+        class="text-3xl text-white relative w-4/5 flex justify-center items-center"
+      >
+        <!-- Game Loading Screen -->
+        <section
+          class="hidden flex flex-col items-center gap-3 md:gap-5 text-center"
+        >
+          <h1 class="text-anton text-6xl md:text-8xl lg:text-9xl">
+            ALPHABET CLASH
+          </h1>
+          <p class="text-poppins text-base md:text-lg lg:text-xl font-medium">
+            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+          </p>
+          <button
+            class="btn bg-white text-slate-950 mt-4 text-poppins font-semibold px-4 hover:opacity-70 hover:bg-white border-none"
+          >
+            Play Now
+          </button>
+        </section>
+        <!-- Game Ending Screen -->
+        <section
+          class="hidden flex flex-col items-center gap-2 bg-slate-100 bg-opacity-30 text-center p-10 rounded-lg"
+        >
+          <h3
+            class="text-poppins font-extrabold text-5xl md:text-7xl lg:text-8xl w-max"
+          >
+            Score: <span>10</span>
+          </h3>
+
+          <p class="text-poppins text-base md:text-lg lg:text-xl font-medium">
+            Practice will make you Pro
+          </p>
+          <button
+            class="btn bg-white text-slate-950 text-poppins font-semibold px-4 hover:opacity-70 hover:bg-white border-none mt-4"
+          >
+            Play Again
+          </button>
+        </section>
+        <!-- Game  Screen -->
+        <section class="flex flex-col items-center gap-3 md:gap-16 text-center">
+          <!-- Key Screen -->
+          <div
+            class="artboard artboard-horizontal phone-4 bg-slate-100 border-slate-800 border-[15px] rounded-xl flex items-center flex-col justify-between"
+          >
+            <p
+              class="text-poppins text-lg font-medium bg-slate-800 inline-block p-4 rounded-b-xl"
+            >
+              Don't watch keyboard while playing...
+            </p>
+            <h3
+              class="text-poppins text-9xl font-semibold inline-block rounded-b-xl text-black mb-24 uppercase"
+            >
+              Y
+            </h3>
+          </div>
+          <!-- Keyboard Layout -->
+          <div>
+            <div class="flex justify-center gap-2 my-2 w-full">
+              <kbd class="kbd bg-slate-100 text-black">q</kbd>
+              <kbd class="kbd bg-slate-100 text-black">w</kbd>
+              <kbd class="kbd bg-slate-100 text-black">e</kbd>
+              <kbd class="kbd bg-slate-100 text-black">r</kbd>
+              <kbd class="kbd bg-slate-100 text-black">t</kbd>
+              <kbd class="kbd bg-slate-100 text-black">y</kbd>
+              <kbd class="kbd bg-slate-100 text-black">u</kbd>
+              <kbd class="kbd bg-slate-100 text-black">i</kbd>
+              <kbd class="kbd bg-slate-100 text-black">o</kbd>
+              <kbd class="kbd bg-slate-100 text-black">p</kbd>
+            </div>
+            <div class="flex justify-center gap-2 my-2 w-full">
+              <kbd class="kbd bg-slate-100 text-black">a</kbd>
+              <kbd class="kbd bg-slate-100 text-black">s</kbd>
+              <kbd class="kbd bg-slate-100 text-black">d</kbd>
+              <kbd class="kbd bg-slate-100 text-black">f</kbd>
+              <kbd class="kbd bg-slate-100 text-black">g</kbd>
+              <kbd class="kbd bg-slate-100 text-black">h</kbd>
+              <kbd class="kbd bg-slate-100 text-black">j</kbd>
+              <kbd class="kbd bg-slate-100 text-black">k</kbd>
+              <kbd class="kbd bg-slate-100 text-black">l</kbd>
+            </div>
+            <div class="flex justify-center gap-2 my-2 w-full">
+              <kbd class="kbd bg-slate-100 text-black">z</kbd>
+              <kbd class="kbd bg-slate-100 text-black">x</kbd>
+              <kbd class="kbd bg-slate-100 text-black">c</kbd>
+              <kbd class="kbd bg-slate-100 text-black">v</kbd>
+              <kbd class="kbd bg-slate-100 text-black">b</kbd>
+              <kbd class="kbd bg-slate-100 text-black">n</kbd>
+              <kbd class="kbd bg-slate-100 text-black">m</kbd>
+            </div>
+          </div>
+          <!-- Score And Life -->
+          <div class="flex justify-between w-full">
+            <div
+              class="bg-sky-500 text-white p-3 rounded-3xl text-xl flex justify-center items-center gap-2 w-32"
+            >
+              <span>Life</span>
+              <img src="media/life.svg" alt="icon" />
+              <span>1</span>
+            </div>
+            <div
+              class="bg-blue-700 text-white p-3 rounded-3xl text-xl flex justify-center items-center gap-2 w-32"
+            >
+              <span>Score</span>
+              <img src="media/score.svg" alt="icon" />
+              <span>1</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
