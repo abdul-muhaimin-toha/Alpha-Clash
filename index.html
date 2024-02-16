@@ -23,7 +23,8 @@
       >
         <!-- Game Loading Screen -->
         <section
-          class="hidden flex flex-col items-center gap-3 md:gap-5 text-center"
+          id="game-welcome"
+          class="flex flex-col items-center gap-3 md:gap-5 text-center"
         >
           <h1 class="text-anton text-6xl md:text-8xl lg:text-9xl">
             ALPHABET CLASH
@@ -32,32 +33,37 @@
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
           <button
-            class="btn bg-white text-slate-950 mt-4 text-poppins font-semibold px-4 hover:opacity-70 hover:bg-white border-none"
+            id="start-btn"
+            class="start-btn btn bg-white text-slate-950 mt-4 text-poppins font-semibold px-4 hover:opacity-70 hover:bg-white border-none"
           >
             Play Now
           </button>
         </section>
         <!-- Game Ending Screen -->
         <section
+          id="game-score"
           class="hidden flex flex-col items-center gap-2 bg-slate-100 bg-opacity-30 text-center p-10 rounded-lg"
         >
           <h3
             class="text-poppins font-extrabold text-5xl md:text-7xl lg:text-8xl w-max"
           >
-            Score: <span>10</span>
+            Score: <span id="final-score">10</span>
           </h3>
 
           <p class="text-poppins text-base md:text-lg lg:text-xl font-medium">
             Practice will make you Pro
           </p>
           <button
-            class="btn bg-white text-slate-950 text-poppins font-semibold px-4 hover:opacity-70 hover:bg-white border-none mt-4"
+            class="start-btn btn bg-white text-slate-950 text-poppins font-semibold px-4 hover:opacity-70 hover:bg-white border-none mt-4"
           >
             Play Again
           </button>
         </section>
         <!-- Game  Screen -->
-        <section class="flex flex-col items-center gap-3 md:gap-16 text-center">
+        <section
+          id="game-active"
+          class="hidden flex flex-col items-center gap-3 md:gap-16 text-center"
+        >
           <!-- Key Screen -->
           <div
             class="artboard artboard-horizontal phone-4 bg-slate-100 border-slate-800 border-[15px] rounded-xl flex items-center flex-col justify-between"
@@ -68,6 +74,7 @@
               Don't watch keyboard while playing...
             </p>
             <h3
+              id="desire-alphabet"
               class="text-poppins text-9xl font-semibold inline-block rounded-b-xl text-black mb-24 uppercase"
             >
               Y
@@ -76,36 +83,36 @@
           <!-- Keyboard Layout -->
           <div>
             <div class="flex justify-center gap-2 my-2 w-full">
-              <kbd class="kbd bg-slate-100 text-black">q</kbd>
-              <kbd class="kbd bg-slate-100 text-black">w</kbd>
-              <kbd class="kbd bg-slate-100 text-black">e</kbd>
-              <kbd class="kbd bg-slate-100 text-black">r</kbd>
-              <kbd class="kbd bg-slate-100 text-black">t</kbd>
-              <kbd class="kbd bg-slate-100 text-black">y</kbd>
-              <kbd class="kbd bg-slate-100 text-black">u</kbd>
-              <kbd class="kbd bg-slate-100 text-black">i</kbd>
-              <kbd class="kbd bg-slate-100 text-black">o</kbd>
-              <kbd class="kbd bg-slate-100 text-black">p</kbd>
+              <kbd id="q" class="kbd bg-slate-100 text-black">q</kbd>
+              <kbd id="w" class="kbd bg-slate-100 text-black">w</kbd>
+              <kbd id="e" class="kbd bg-slate-100 text-black">e</kbd>
+              <kbd id="r" class="kbd bg-slate-100 text-black">r</kbd>
+              <kbd id="t" class="kbd bg-slate-100 text-black">t</kbd>
+              <kbd id="y" class="kbd bg-slate-100 text-black">y</kbd>
+              <kbd id="u" class="kbd bg-slate-100 text-black">u</kbd>
+              <kbd id="i" class="kbd bg-slate-100 text-black">i</kbd>
+              <kbd id="o" class="kbd bg-slate-100 text-black">o</kbd>
+              <kbd id="p" class="kbd bg-slate-100 text-black">p</kbd>
             </div>
             <div class="flex justify-center gap-2 my-2 w-full">
-              <kbd class="kbd bg-slate-100 text-black">a</kbd>
-              <kbd class="kbd bg-slate-100 text-black">s</kbd>
-              <kbd class="kbd bg-slate-100 text-black">d</kbd>
-              <kbd class="kbd bg-slate-100 text-black">f</kbd>
-              <kbd class="kbd bg-slate-100 text-black">g</kbd>
-              <kbd class="kbd bg-slate-100 text-black">h</kbd>
-              <kbd class="kbd bg-slate-100 text-black">j</kbd>
-              <kbd class="kbd bg-slate-100 text-black">k</kbd>
-              <kbd class="kbd bg-slate-100 text-black">l</kbd>
+              <kbd id="a" class="kbd bg-slate-100 text-black">a</kbd>
+              <kbd id="s" class="kbd bg-slate-100 text-black">s</kbd>
+              <kbd id="d" class="kbd bg-slate-100 text-black">d</kbd>
+              <kbd id="f" class="kbd bg-slate-100 text-black">f</kbd>
+              <kbd id="g" class="kbd bg-slate-100 text-black">g</kbd>
+              <kbd id="h" class="kbd bg-slate-100 text-black">h</kbd>
+              <kbd id="j" class="kbd bg-slate-100 text-black">j</kbd>
+              <kbd id="k" class="kbd bg-slate-100 text-black">k</kbd>
+              <kbd id="l" class="kbd bg-slate-100 text-black">l</kbd>
             </div>
             <div class="flex justify-center gap-2 my-2 w-full">
-              <kbd class="kbd bg-slate-100 text-black">z</kbd>
-              <kbd class="kbd bg-slate-100 text-black">x</kbd>
-              <kbd class="kbd bg-slate-100 text-black">c</kbd>
-              <kbd class="kbd bg-slate-100 text-black">v</kbd>
-              <kbd class="kbd bg-slate-100 text-black">b</kbd>
-              <kbd class="kbd bg-slate-100 text-black">n</kbd>
-              <kbd class="kbd bg-slate-100 text-black">m</kbd>
+              <kbd id="z" class="kbd bg-slate-100 text-black">z</kbd>
+              <kbd id="x" class="kbd bg-slate-100 text-black">x</kbd>
+              <kbd id="c" class="kbd bg-slate-100 text-black">c</kbd>
+              <kbd id="v" class="kbd bg-slate-100 text-black">v</kbd>
+              <kbd id="b" class="kbd bg-slate-100 text-black">b</kbd>
+              <kbd id="n" class="kbd bg-slate-100 text-black">n</kbd>
+              <kbd id="m" class="kbd bg-slate-100 text-black">m</kbd>
             </div>
           </div>
           <!-- Score And Life -->
@@ -115,14 +122,14 @@
             >
               <span>Life</span>
               <img src="media/life.svg" alt="icon" />
-              <span>1</span>
+              <span id="life">1</span>
             </div>
             <div
-              class="bg-blue-700 text-white p-3 rounded-3xl text-xl flex justify-center items-center gap-2 w-32"
+              class="bg-blue-900 text-white p-3 rounded-3xl text-xl flex justify-center items-center gap-2 w-32"
             >
               <span>Score</span>
               <img src="media/score.svg" alt="icon" />
-              <span>1</span>
+              <span id="score">1</span>
             </div>
           </div>
         </section>
